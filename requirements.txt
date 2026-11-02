@@ -1,0 +1,16 @@
+# Core Deep Learning & Reinforcement Learning
+torch
+gymnasium>=0.29.0
+
+# Numerical, Physics & Analytics
+numpy>=1.26.0
+scipy>=1.12.0
+pandas>=2.2.0
+
+# Visualization & Rendering
+matplotlib>=3.8.0
+seaborn>=0.13.0
+pygame>=2.5.0
+pillow>=10.2.0
+imageio>=2.34.0
+imageio[ffmpeg]
