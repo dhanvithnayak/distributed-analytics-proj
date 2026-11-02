@@ -22,11 +22,11 @@ share/python-wheels/
 *.egg
 
 # Virtual Environment
-venv/
-env/
-ENV/
-env.bak/
-venv.bak/
+/venv/
+/env/
+/ENV/
+/env.bak/
+/venv.bak/
 
 # PyTorch / CUDA
 *.pt
