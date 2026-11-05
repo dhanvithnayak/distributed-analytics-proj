@@ -164,6 +164,8 @@ class IndustrialIntersectionEnv:
                 if check_collision(v1, v2):
                     v1.collided = True
                     v2.collided = True
+                    v1.active = False
+                    v2.active = False
                     current_collisions += 1
 
         self.total_collisions += current_collisions
