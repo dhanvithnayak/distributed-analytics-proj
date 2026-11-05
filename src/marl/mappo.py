@@ -8,6 +8,7 @@ from typing import Tuple, Dict, Any, List, Optional
 import numpy as np
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Normal
 from src.marl.comm_layer import V2VAttentionCommLayer
