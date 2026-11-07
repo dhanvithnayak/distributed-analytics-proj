@@ -31,14 +31,11 @@ share/python-wheels/
 # PyTorch / CUDA
 *.pt
 *.pth
-!models/checkpoints/best_*.pt
+!models/best_*.pt
 
-# Data & Output Logs
+# Output Logs
 results/*.csv
-results/*.png
 !results/.gitkeep
-assets/*.gif
-!assets/.gitkeep
 
 # IDEs & OS
 .idea/
