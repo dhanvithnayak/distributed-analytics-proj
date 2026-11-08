@@ -1,20 +1,17 @@
-# Distributed Automated Driving System for Industrial Logistics Networks
+### Distributed Automated Driving System for Industrial Logistics Networks
 
-> **Course:** Distributed Analytics for Industrial Automation  
+> **Course:** Distributed Analytics for Industrial Automation (IM60210)  
 > **Department:** Industrial and Systems Engineering (ISE)  
-> **Author:** dhanvithnayak  
+> **Author:** Dhanvith Nayak (23IM10010)  
 > **Methodology:** Multi-Agent Reinforcement Learning (Comm-MAPPO) with Dynamic V2V Communication Graphs
 
----
-
-## 📌 Executive Summary
+## Executive Summary
 In industrial automation and cyber-physical supply chains, critical bottleneck nodes (such as automated container terminals, intermodal freight yards, and unsignalized factory intersections) suffer severe throughput loss, queue delays, and deadlocks when relying on either rigid centralized controllers or greedy decentralized heuristics.
 
 This project implements a **Distributed Automated Driving System** for Connected and Autonomous Vehicles (CAVs) modeled as a **Decentralized Partially Observable Markov Decision Process (Dec-POMDP)**. By leveraging an onboard **Spatial Multi-Head Graph Attention (GAT)** communication layer, agents collaboratively coordinate velocity profiles over an ad-hoc Vehicle-to-Vehicle (V2V) network $\mathcal{G}(t) = (\mathcal{V}, \mathcal{E}(t))$.
 
----
 
-## 📊 Benchmark Results (20 Test Episodes)
+## Benchmark Results (20 Test Episodes)
 
 | Strategy | Paradigm | Throughput (Veh / 1k steps) | Mean Queue Stalling (steps) | Mean Fleet Speed (m/s) | Kinetic Jerk Index |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -28,9 +25,7 @@ This project implements a **Distributed Automated Driving System** for Connected
 2. **74% Jerk Reduction** over FIFO and **88% Jerk Reduction** over reactive IDM-TTC, preserving electric vehicle battery health and reducing mechanical wear.
 3. **Cyber-Physical Network Resilience:** Retains $>95\%$ peak throughput under $20\%$ stochastic wireless packet loss, proving graceful degradation.
 
----
-
-## 📂 Project Repository Structure
+## Project Repository Structure
 ```text
 dist_analytics_proj/
 ├── assets/
@@ -69,25 +64,19 @@ dist_analytics_proj/
     └── test_baselines_and_marl.py   # Baseline & MARL integration tests
 ```
 
----
+## Local Run Instructions
 
-## 🚀 Reproduction Instructions
-
-### 1. Re-run Evaluation Benchmark
+#### 1. Re-run Evaluation Benchmark
 ```bash
 PYTHONPATH=. python3 src/evaluate.py --episodes 20
 ```
 
-### 2. Regenerate Presentation Charts
+#### 2. Regenerate Presentation Charts
 ```bash
 PYTHONPATH=. python3 src/analytics/plotting.py
 ```
 
-### 3. Record Simulation Demos
+#### 3. Record Simulation Demos
 ```bash
 PYTHONPATH=. SDL_VIDEODRIVER=dummy python3 src/demo.py
 ```
-
-### 4. Presentation Slide Deck
-The complete presentation deck with speaker notes is available at:  
-👉 [`docs/presentation_deck.md`](docs/presentation_deck.md)
